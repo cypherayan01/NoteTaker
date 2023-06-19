@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration SYSTEM
+	"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+	
+<hibernate-configuration>
+	<session-factory>
+		<property name="hibernate.connection.driver_class">net.sourceforge.jtds.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:jtds:sqlserver://localhost:1433/HLS_UP100</property>
+        <property name="hibernate.connection.username">sa</property>
+        <property name="hibernate.connection.password">Password#123</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.SQLServerDialect</property>
+        <property name="show_sql">true</property>
+        <property name="hibernate.jdbc.batch_size">50</property>
+        <property name="hibernate.cache.use_second_level_cache">false</property>
+        <property name="hibernate.dialect">com.ey.hls.impl.dao.connection.MySQLServerDialect</property>
+	
+	</session-factory>
+
+</hibernate-configuration>
